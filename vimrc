@@ -249,15 +249,6 @@ Plug 'mhinz/vim-startify'
 
 call plug#end()
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugin: fzf & ripgrep
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" map ctrl+p to fzf
-map <C-p> :Files<cr>
-
-" map ctrl+P to ripgrep
-map <C-o> :Rg 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin: Sessions
@@ -279,3 +270,6 @@ endif
 
 set background=dark
 colorscheme solarized
+
+" Run pathogen
+execute pathogen#infect()
